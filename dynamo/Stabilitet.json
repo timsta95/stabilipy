@@ -1,0 +1,66 @@
+{
+    "Type": "JPropertySetDefinition", 
+    "Data": {
+        "Definitions": [
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Name", 
+                    "DataType": "Text", 
+                    "Description": "Name"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Sikkerhet_mot", 
+                    "DataType": "Text", 
+                    "Description": "Sikkerhet_mot"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Vannstand", 
+                    "DataType": "Text", 
+                    "Description": "Vannstand"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Sikkerhetsfaktor", 
+                    "DataType": "Text", 
+                    "Description": "Sikkerhetsfaktor"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Sikkerhetskrav", 
+                    "DataType": "Text", 
+                    "Description": "Sikkerhetskrav"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Stabilitet", 
+                    "DataType": "Text", 
+                    "Description": "Stabilitet"
+                }
+            }
+        ], 
+        "Name": "Stabilitet", 
+        "AppliesToFilter": [
+            "AcDb3dSolid"
+        ], 
+        "Description": ""
+    }
+}

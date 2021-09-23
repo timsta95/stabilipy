@@ -1,0 +1,326 @@
+{
+  "Uuid": "0ba5916e-5a12-41c6-8611-8b12d298f918",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "dam",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "834690bf588b49368ea9f82e731f6825",
+      "Name": "Excel Data: Directory Path",
+      "Type": "string",
+      "Value": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
+      "Description": "Allows you to select a directory on the system to get its path"
+    },
+    {
+      "Id": "f529705d3ec14621b01a3dbd0c5c6b28",
+      "Name": "Property Set: Egenskaper",
+      "Type": "string",
+      "Value": ".\\Egenskaper.json",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "Id": "f492b9481b394501835f5a96e0628311",
+      "Name": "Property Set: Stabilitet",
+      "Type": "string",
+      "Value": ".\\Stabilitet.json",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "Id": "d7b1e8b163244d45be0f239ad5ba4ef1",
+      "Name": "Level: ['HRV + is', 'DFV', 'MFV']",
+      "Type": "string",
+      "Value": "HRV + is",
+      "Description": "Creates a string."
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.Directory, CoreNodeModels",
+      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
+      "InputValue": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
+      "NodeType": "ExtensionNode",
+      "Id": "834690bf588b49368ea9f82e731f6825",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d47d858fd62140439958922244e0e495",
+          "Name": "",
+          "Description": "Directory",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a directory on the system to get its path"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "43c2cbfa-98ae-4ed0-bdb3-9572f754bd1d",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "d6f23ff9ee4f47558efbe818e421adc8",
+      "Inputs": [
+        {
+          "Id": "0ff24f39308c4bc89d70eec45c7fe39f",
+          "Name": "Vannstand",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "876a7be9897d43f491b574b5d0f9137e",
+          "Name": "Directory",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "528a3b5ea8f644018e33563e6091cacc",
+          "Name": "EgenskaperDir",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aa1632e432354c6f947e03eaaaeb6aaf",
+          "Name": "StabilitetDir",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "74f96dc15ffd44a7a10b28dd48005aa3",
+          "Name": "Object",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e0cd5d84be7d4ffbaf714fa6b0893af1",
+          "Name": "OUT0",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6ea6333bdf5d4a0b9efdbe020e9188d2",
+          "Name": "OUT1",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\dynamo\\Egenskaper.json",
+      "InputValue": ".\\Egenskaper.json",
+      "NodeType": "ExtensionNode",
+      "Id": "f529705d3ec14621b01a3dbd0c5c6b28",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "88cfaad740e349d298f8865300fe5e70",
+          "Name": "",
+          "Description": "Filename",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\dynamo\\Stabilitet.json",
+      "InputValue": ".\\Stabilitet.json",
+      "NodeType": "ExtensionNode",
+      "Id": "f492b9481b394501835f5a96e0628311",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fa3578cc9c534fc9b90a078c8c08dd0a",
+          "Name": "",
+          "Description": "Filename",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its filename"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "HRV + is",
+      "Id": "d7b1e8b163244d45be0f239ad5ba4ef1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b5140ded83054093a159ba8a24d365c3",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "d47d858fd62140439958922244e0e495",
+      "End": "876a7be9897d43f491b574b5d0f9137e",
+      "Id": "418443a6dbf84ebd8c5d70ab3a88d848"
+    },
+    {
+      "Start": "88cfaad740e349d298f8865300fe5e70",
+      "End": "528a3b5ea8f644018e33563e6091cacc",
+      "Id": "34529ede9a094859a5b34cdd7cfbb89b"
+    },
+    {
+      "Start": "fa3578cc9c534fc9b90a078c8c08dd0a",
+      "End": "aa1632e432354c6f947e03eaaaeb6aaf",
+      "Id": "a682f50dbdca4f80b8bfede3c401b906"
+    },
+    {
+      "Start": "b5140ded83054093a159ba8a24d365c3",
+      "End": "0ff24f39308c4bc89d70eec45c7fe39f",
+      "Id": "d2e42f6b724b4d24afb92d162bcb8cdd"
+    }
+  ],
+  "Dependencies": [
+    "43c2cbfa-98ae-4ed0-bdb3-9572f754bd1d"
+  ],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.5.2.7915",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Excel Data: Directory Path",
+        "Id": "834690bf588b49368ea9f82e731f6825",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 182.3275515053727,
+        "Y": 393.77917539266457
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "dam_stability_3d",
+        "Id": "d6f23ff9ee4f47558efbe818e421adc8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 579.11582730216287,
+        "Y": 218.03972652431071
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Property Set: Egenskaper",
+        "Id": "f529705d3ec14621b01a3dbd0c5c6b28",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 295.35718199339959,
+        "Y": 236.7248192245944
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Property Set: Stabilitet",
+        "Id": "f492b9481b394501835f5a96e0628311",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 311.01543649448763,
+        "Y": 146.12420763743282
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Level: ['HRV + is', 'DFV', 'MFV']",
+        "Id": "d7b1e8b163244d45be0f239ad5ba4ef1",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 269.61693880385843,
+        "Y": 328.34103199071183
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "f7017b55b25e415e8127fd8634527ba9",
+        "Title": "Input",
+        "Nodes": [
+          "834690bf588b49368ea9f82e731f6825",
+          "f529705d3ec14621b01a3dbd0c5c6b28",
+          "f492b9481b394501835f5a96e0628311",
+          "d7b1e8b163244d45be0f239ad5ba4ef1"
+        ],
+        "Left": 172.3275515053727,
+        "Top": 93.124207637432818,
+        "Width": 299.68788498911493,
+        "Height": 394.65496775523172,
+        "FontSize": 36.0,
+        "InitialTop": 146.12420763743282,
+        "InitialHeight": 392.65496775523172,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -117.52284419145889,
+    "Y": 289.43062250795793,
+    "Zoom": 0.98309670345676037
+  }
+}

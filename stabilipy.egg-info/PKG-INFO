@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: stabilipy
+Version: 0.0.1
+Summary: Concrete-dam stability analyses
+Home-page: https://github.com/timsta95/stabilipy
+Author: timsta95
+Author-email: stabilipy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Concrete dam stability
+
+&copy; timsta95, 2021
+
+## Stability analyses of buttress dams and gravity dams, adapted for Norway and NVE's guidelines
+
+IMPORTANT: ALTHOUGH TESTED AND USED FOR REAL-WORLD APPLICATIONS, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, SEE LICENSE FILE (MIT LICENSE)
+
+---
+
+
+

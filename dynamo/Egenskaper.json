@@ -1,0 +1,75 @@
+{
+    "Type": "JPropertySetDefinition", 
+    "Data": {
+        "Definitions": [
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Name", 
+                    "DataType": "Text", 
+                    "Description": "Name"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Axis", 
+                    "DataType": "Text", 
+                    "Description": "Axis"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Width", 
+                    "DataType": "Text", 
+                    "Description": "Width"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Specific_weight", 
+                    "DataType": "Text", 
+                    "Description": "Specific_weight"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Volume", 
+                    "DataType": "Text", 
+                    "Description": "Volume"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Load", 
+                    "DataType": "Text", 
+                    "Description": "Load"
+                }
+            }, 
+            {
+                "Type": "JPropertyDefinition", 
+                "Data": {
+                    "Automatic": false, 
+                    "Name": "Vannstand", 
+                    "DataType": "Text", 
+                    "Description": "Vannstand"
+                }
+            }
+        ], 
+        "Name": "Egenskaper", 
+        "AppliesToFilter": [
+            "AcDb3dSolid"
+        ], 
+        "Description": ""
+    }
+}

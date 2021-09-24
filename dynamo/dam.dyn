@@ -11,7 +11,7 @@
       "Id": "834690bf588b49368ea9f82e731f6825",
       "Name": "Excel Data: Directory Path",
       "Type": "string",
-      "Value": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
+      "Value": ".\\Enter path",
       "Description": "Allows you to select a directory on the system to get its path"
     },
     {
@@ -40,8 +40,8 @@
   "Nodes": [
     {
       "ConcreteType": "CoreNodeModels.Input.Directory, CoreNodeModels",
-      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
-      "InputValue": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\export",
+      "HintPath": "C:\\Users\\path,
+      "InputValue": "C:\\Users\\path",
       "NodeType": "ExtensionNode",
       "Id": "834690bf588b49368ea9f82e731f6825",
       "Inputs": [],
@@ -137,7 +137,7 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\dynamo\\Egenskaper.json",
+      "HintPath": "C:\\Users\\path",
       "InputValue": ".\\Egenskaper.json",
       "NodeType": "ExtensionNode",
       "Id": "f529705d3ec14621b01a3dbd0c5c6b28",
@@ -158,7 +158,7 @@
     },
     {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Users\\tims\\OneDrive - Multiconsult\\Python\\JupyterNotebooks\\Damstabilitet2\\dynamo\\Stabilitet.json",
+      "HintPath": "C:\\Users\\path",
       "InputValue": ".\\Stabilitet.json",
       "NodeType": "ExtensionNode",
       "Id": "f492b9481b394501835f5a96e0628311",

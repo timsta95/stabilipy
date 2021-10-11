@@ -29,6 +29,16 @@ class Segment:
         self.area = self.poly.area
         self.load = self.area * self.width * self.spec_weight
 
+    def __str__(self) -> str:
+        return (f'Segment: name = {self.name}, '
+                f'section area = {round(self.area, 3)}, '                
+                f'width = {round(self.width, 3)}, '
+                f'spec. weight = {round(self.spec_weight, 3)}, '
+                f'axis = {round(self.axis, 3)}, '
+                f'centroid = ({round(self.centroid.x, 3)}, '
+                f'{round(self.centroid.y, 3)}), '
+                f'load = {round(self.load, 3)}')
+
     @property
     def coords(self):
         return self.poly.exterior.coords.xy

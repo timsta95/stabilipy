@@ -34,6 +34,15 @@ class Pillar:
         if not isinstance(self.name, str):
             raise ValueError('invalid name')
 
+    def __str__(self) -> str:
+        return f'{self.name} of type {self.dam_type}'
+
+    def __add__(self, other):
+        return [self, other]
+
+    def __radd__(self, other):
+        return other + [self]
+
     @cached_property
     def union(self):
         return unary_union([i.poly for i in self.segments])

@@ -1,3 +1,5 @@
+from context import stabilipy
+
 from stabilipy import export
 from example_dam import dam as ex_dam, levels as ex_levels
 from timeit import default_timer as timer

@@ -79,8 +79,8 @@ class Stability:
 
     @property
     def velting_resultant(self):
-        return [sum(m) / math.sqrt(fh**2 + fv**2) for m, fh, fv in zip(
-            self.moment, self.horizontal_loads, self.vertical_loads)]
+        return [sum(m) / fv for m, fv in zip(
+            self.moment, self.vertical_loads)]
 
     @property
     def velting_moment(self):

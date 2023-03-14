@@ -1,3 +1,5 @@
+from context import stabilipy
+
 from stabilipy import segment, pillar, dam
 from shapely.geometry import Polygon
 
